@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family: "Kantumruy Pro", sans-serif; */
+    /* font-family: "Suwannaphum", serif; */
+    /* font-family: "Koulen", sans-serif; */
+}
+
+.header{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+.icon{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    /* background-color: #fff; */
+}
+nav{
+    background-color: rgb(243, 42, 6);
+    width: 100%;
+    /* padding: 0; */
+}
+.menubar{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+h5{
+    display: none;
+}
+.menubar ul{
+    display: flex;
+    gap: 30px;
+}
+.menubar ul li a{
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: "Koulen", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.menubar ul li a:hover{
+    color: green;
+}
+.logo{
+    width: 40%;
+    /* background-color: red; */
+    height: 13vh;
+}
+.ads{
+    width: 60%;
+    /* background-color: red; */
+    height: 13vh;
+}
+.ads img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo img{
+    width: 95px;
+    height: 100%;
+}
+
+
+
+
+.container{
+    margin: auto;
+    width: 76%;
+    padding: 10px;
+}
+
+.section1{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 3%;
+}
+.section1 .content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section1 .ads{
+    width: 30%;
+    height: 100%;
+}
+
+.ads .ads1{
+    margin-bottom: 3%;
+    width: 100%;
+    height: 49%;
+    background-color: #ffffff;
+}
+.ads .ads2{
+    width: 100%;
+    height: 49%;
+    background-color: #ffffff;
+}
+
+.ads1 img,.ads2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content .box1{
+    width: 59%;
+    height: 49%;
+    position: relative;
+
+}
+.content .box2{
+    width: 39%;
+    height: 49%;
+    position: relative;
+
+}
+
+.theslide{
+    width: 100%;
+    position: relative;
+}
+.theslide p{
+    width: 30%;
+    top: 10px;
+    padding: 5px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    z-index: 99;
+    position: absolute;
+}
+.theslide text{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    bottom: 10px;
+    left: 10px;
+}
+
+.box1 a{
+    transition: 0.6s all;
+}
+.box1 a img,.box2 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s all;
+
+}
+.box1 a::before,.box2 a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.556);
+    transition: 0.6s all;
+
+}
+
+.box1 p,.box2 p{
+    font-family: "Kantumruy Pro", sans-serif;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    padding: 10px 50px 10px 20px;
+    background-color: green;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    color: #fff;
+    z-index: 2;
+}
+.box1 h6,.box2 h6{
+    font-family: "Kantumruy Pro", sans-serif;
+    position: absolute;
+    font-size: 18px;
+    bottom: 5%;
+    left: 5%;
+    color: #fff;
+    z-index: 2;
+}
+.box1 h3{
+    position: absolute;
+}
+.box1 .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,#00000000,#00000000);
+}
+.box2 .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,#00000000,#00000000);
+}
+.txt .text{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s all;
+  
+}
+
+.box1:hover .text{
+    background-image: linear-gradient(to top,#000000,#00000000);
+    cursor: pointer;
+}
+.box2:hover .text{
+    background-image: linear-gradient(to top,#000000,#00000000);
+    cursor: pointer;
+}
+.text .title{
+    width: 100%;
+    height: 85%;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.title .thetitle{
+    margin-top: 40%;
+    width: 100%;
+    height: 40%;
+    transition: 0.6s all;
+    color: #fff;
+    font-family: "Kantumruy Pro", sans-serif;
+    /* background-color: rgb(9, 37, 11); */
+
+}
+.title .thetitle2{
+    margin-top: 65%;
+    width: 100%;
+    /* background-color: green; */
+    height: 40%;
+    transition: 0.6s all;
+    color: #fff;
+    font-family: "Kantumruy Pro", sans-serif;
+
+}
+.box1:hover .thetitle{
+    margin-top: 30%;
+}
+.box2:hover .thetitle2{
+    margin-top: 50%;
+}
+
+/*____________________________Section2_______________________*/
+
+.section2{
+    width: 100%;
+    /* height: 60vh; */
+    font-family: "Kantumruy Pro", sans-serif;
+    border-top: 3px solid crimson;
+    padding: 20px 30px 20px 30px;
+    background-color: #fff;
+    margin-bottom: 2%;
+    box-shadow: 1px 3px 7px #909090;
+
+}
+.container h3{
+    color: #fff;
+    font-family: "Koulen", sans-serif;
+    padding: 10px 20px;
+    background-color: crimson;
+    width: 30%;
+    font-weight: 300;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+/* .section2 .side1{
+    background-color: green;
+} */
+.side1 .item{
+    padding: 5px;
+    /* background-color: #aaa; */
+}
+.item .img{
+    height: 190px;
+}
+.item .txt{
+    width: 110px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side2{
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s all;
+    /* background-color: green; */
+}
+.theside2{
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s all;
+    /* background-color: green; */
+}
+.side2 .main-box{
+    width: 30%;
+    background-color: crimson;
+}
+.main-box .img,.main-box .txt{
+    height: 50%;
+    color: #fff;
+}
+.main-box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side2 .img img:hover{
+    transform: scale(0.98);
+}
+
+.side2 .content-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: #aaa; */
+}
+.side2 .cnt-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+    /* color: #fff; */
+    /* background-color: #aaa; */
+}
+
+.box{
+    padding: 5px;
+}
+.box .img{
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+}
+.img img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .txt{
+    height: 90px;
+    /* background-color: darkorange; */
+}
+
+
+/*_____________footer________________*/
+
+footer{
+    font-family: "Kantumruy Pro", sans-serif;
+    line-height: 1.9;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    /* height: 50vh; */
+    color: #ebebeb;
+    background-color: #000000;
+}
+footer .block{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 76%;
+    /* height: 50vh; */
+}
+.block .theblock{
+    width: 31%;
+    height: 100%;
+}
+.theblock h2{
+    margin-bottom: 6%;
+}
+.theblock .footerlogo{
+    width: 50%;
+    height: 19%;
+    margin-bottom: 6%;
+}
+.footerlogo:first-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.theblock img{
+    width: 25px;
+    transition: 0.4s all;
+}
+.theblock img:hover{
+    transform: scale(1.05);
+}
+.theblock h2{
+    font-size: 22px;
+}
+.theblock a{
+    font-size: 25px;
+    color: #f0f0f0;
+}
+.theblock a:last-child{
+    font-size: 16px;
+}
+
+
+
+
+
+
+/*_________________@media______________________*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+    
+    .theside2 .main-box{
+        display: none;
+    }
+    .side2{
+        display: none;
+    } 
+    .theside2 .cnt-box .box:nth-child(3),.theside2 .cnt-box .box:nth-child(4),.theside2 .cnt-box .box:nth-child(5),.theside2 .cnt-box .box:nth-child(6),.theside2 .cnt-box .box:nth-child(7),.theside2 .cnt-box .box:nth-child(8){
+        display: none;
+    }
+   
+    
+    .item .img,.item .txt{
+        height: 100px;
+        width: 100%;
+        /* background-color: blue; */
+    }
+    .section1{
+        display: none;
+    }
+    
+    h5{
+        padding-top: 15px;
+        display: block;
+    }
+    .menubar{
+        background-color: black;
+        width: 100%;
+    }
+    li{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .thelogo{
+        padding-top: 15px;
+        margin-left: 30%;
+    }
+    .thelogo img{
+        width: 40px;
+        height: 50%;
+    }
+    .container h3{
+        margin-top: 5px;
+        font-size: 15px;
+        width: 30%;
+        margin-bottom: 0;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .container h3{
+        text-align: center;
+        width: 150px;
+    }
+
+
+
+    footer{
+        line-height: 1.2;
+    }
+    footer .block{
+        text-align: center;
+        align-items: center;
+        width: 70%;
+        display: block;
+    }
+    .block .theblock{
+        margin-bottom: 15%;
+        width: 100%;
+        height: 190px;
+    }
+    .block .theblock:nth-child(2){
+        display: none;
+    }
+    .theblock h4 {
+        font-size: 15px;
+    }
+    .theblock h2{
+        margin-bottom: 3%;
+    }
+    .theblock .footerlogo{
+        margin-left: 32%;
+        width: 42%;
+        height: 20%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 425px) { 
+    .container h3{
+        text-align: center;
+        width: 150px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .theblock .footerlogo{
+        margin-left:0;
+        width: 40%;
+        height: 19%;
+        margin-bottom: 5%;
+    }
+    .block .theblock:nth-child(2){
+        display: block;
+    }
+    footer .block{
+        text-align: left;
+        width: 70%;
+        display: block;
+    }
+    .block .theblock{
+        margin-bottom: -3%;
+        width: 100%;
+        height: 190px;
+    }
+    .theblock h2{
+        margin-bottom: 3%;
+    }
+    footer .block{
+        width: 93%;
+        display: block;
+    }
+    .block .theblock{
+        width: 100%;
+        height: 190px;
+    }
+    .theblock .footerlogo{
+        width: 20%;
+        height: 19%;
+        margin-bottom: 2%;
+    }
+
+
+
+
+    .side2{
+        display: flex;
+    } 
+    h3{
+        width: 90%;
+    }
+    .theside2 .cnt-box .box:nth-child(3),.theside2 .cnt-box .box:nth-child(4),.theside2 .cnt-box .box:nth-child(5),.theside2 .cnt-box .box:nth-child(6),.theside2 .cnt-box .box:nth-child(7),.theside2 .cnt-box .box:nth-child(8){
+        display:block;
+    }
+    .theside2{
+        justify-content: space-between;
+    }
+    .theside2 .main-box{
+        display: block;
+        height: 400px;
+        width: 53%;
+        background-color: #dd376f;
+    }
+    .theside2 .cnt-box{
+        /* background-color: yellow; */
+        width: 45%;
+    }
+    .theside2{
+        display: flex;
+    } 
+    .item .img,.item .txt{
+        height: 190px;
+    }
+    .theslide{
+        display: none;
+    }
+    .section1{
+        display: flex;
+    }
+    .header{
+        display: flex;
+    }
+    .menubar,.icon{
+        width: 97%;
+        background-color: transparent;
+    }
+    h5{
+        display: none;
+    }
+    li{
+        display: flex;
+    }
+    .thelogo{
+        display: none;
+    }
+    .container{
+        width: 97%;
+    }
+    .adst{
+        display: none;
+    }
+
+    .items{
+        background-color: #1bb110;
+        padding: 20px;
+    }
+    .container h3{
+        margin-top: 5px;
+        font-size: 17px;
+        width: 15%;
+        margin-bottom: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .theblock .footerlogo{
+        width: 50%;
+        height: 19%;
+        margin-bottom: 6%;
+    } 
+    .theblock h2{
+        margin-bottom: 6%;
+    }
+
+    .side2 .main-box{
+        width: 40%;
+    }
+    .side2 .cnt-box{
+        width: 58%;
+    }
+    .container h3{
+        width: 10%;
+    }
+    footer .block{
+        width: 93%;
+        display: flex;
+    }
+    .block .theblock {
+        height: 250px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    .theside2 .main-box{
+        width: 30%;
+    }
+    .theside2 .cnt-box{
+        width: 68%;
+    }
+    .menubar,.icon{
+        width: 80%;
+    }
+    .container{
+        width: 80%;
+    }
+    footer .block{
+        width: 76%;
+    }
+
+}
